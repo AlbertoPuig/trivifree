@@ -1,0 +1,34 @@
+{
+    
+        "Q1":{
+        "QT": "What Hindu God burned villages for fun?",
+        "OP1": "Brand",
+        "OP2": "Zeus",
+        "OP3": "Agni",
+        "CRT": "op3"
+    },
+    
+        "Q2":{
+        "QT": "The capital of Bulgaria is?",
+        "OP1": "Sofia",
+        "OP2": "Dublin",
+        "OP3": "Kiev",
+        "CRT": "op1"
+    },  
+    
+        "Q3":{
+        "QT": "What is the sum of the numbers 1 to 10?",
+        "OP1": "35",
+        "OP2": "55",
+        "OP3": "61",
+        "CRT": "op2"
+    },
+
+        "Q4":{
+        "QT": "What was Trafalgar?",
+        "OP1": "A truce",
+        "OP2": "A riot",
+        "OP3": "A sea battle",
+        "CRT": "op3"
+    }
+} 
