@@ -30,5 +30,49 @@
         "OP2": "A riot",
         "OP3": "A sea battle",
         "CRT": "op3"
+    },
+        "Q5":{
+        "QT": "What is the letter in the Greek alphabet?",
+        "OP1": "Omega",
+        "OP2": "Xi",
+        "OP3": "Gamma",
+        "CRT": "op1"
+    },
+        "Q6":{
+        "QT": "What are the colors in the flag of France?",
+        "OP1": "Blue, red and green",
+        "OP2": "Blue, white and red",
+        "OP3": "Blue and white",
+        "CRT": "op2"
+    },
+        "Q7":{
+        "QT": "What are the 3 secondary colors?",
+        "OP1": "Blue, yellow",
+        "OP2": "Green, orange",
+        "OP3": "Orange, red",
+        "CRT": "op2"
+    },
+        "Q8":{
+        "QT": "Who invented the phonetical alphabet?",
+        "OP1": "Persians",
+        "OP2": "Egyptians",
+        "OP3": "Phoenicians",
+        "CRT": "op3"
+    },
+        "Q9":{
+        "QT": "Where can you eat haggis?",
+        "OP1": "Norway",
+        "OP2": "Scotland",
+        "OP3": "The Netherlands",
+        "CRT": "op2"
+    },
+        "Q10":{
+        "QT": "Where are the temporal bones?",
+        "OP1": "Leg",
+        "OP2": "Head",
+        "OP3": "Neck",
+        "CRT": "op2"
     }
+
+
 } 
