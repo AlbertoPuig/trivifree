@@ -4,22 +4,25 @@ from json import dumps
 from flask.ext.jsonpify import jsonify
 import json
 import logging
+import datetime
 
 app = Flask(__name__)
 api = Api(app)
 
 class Quest(Resource):
+	#return data about question_id
     def get(self, question_id):
        
-
         result = ''
-        logging.basicConfig(filename='file.log', level=logging.DEBUG, format='%(asctime)s %(message)s')
+        today = datetime.date.today()
+        filelogname = 'file_' + str(today) + '.log'
+        logging.basicConfig(filename= filelogname, level=logging.DEBUG, format='%(asctime)s %(message)s')
         logging.debug('Init')
         #encoded
         data_string = json.dumps(result)
         #Decoded
         decoded = json.loads(data_string)
-        #return 'Employees_Name'
+     
         if question_id.isdigit():
             question = 'Q'
             question += question_id
@@ -35,14 +38,13 @@ class Quest(Resource):
                         return make_response(jsonify(),500)
             except Exception as e:
                 #message to log
-                print (e)
+                logging.debug(str(e) + question_id)
                 #return error
                 return make_response(jsonify(e),500) 
         else:
             return abort(400)
 
-
-api.add_resource(Quest, '/trivifree/api/v1/quest/<question_id>') # Route_3
+api.add_resource(Quest, '/trivifree/api/v1/quest/<question_id>') # Route_1
 
 
 if __name__ == '__main__':

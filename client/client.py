@@ -5,6 +5,7 @@ import json
 from ConfigParser import SafeConfigParser
 
 
+#load properties
 def load_properties(env, pproperty):
 	try:
 		parser = SafeConfigParser()
@@ -14,7 +15,7 @@ def load_properties(env, pproperty):
 	except Exception as ex_prop:
 		print "Error______: " + str(ex_prop)
 
-
+#call to trivifree_api
 def get_question(question_id):
 
 	try:
@@ -28,7 +29,7 @@ def get_question(question_id):
 	except Exception as ex:
 		print "Error_____________________: " + str(ex)
 
-
+#show data to user
 def main():
 	qid = 1
 	answers_ok = 0
@@ -36,6 +37,9 @@ def main():
 	while True:
 	    qData = get_question(qid)
 	    if qData is not None:
+	    	print (40*'-')
+	    	print ('|' + 15*' ' + "TriviFree" + 14*' ' + '|')
+	    	print (40*'-')
 	    	a = raw_input(qData['QT'] + '\n' + Opts + '\n' + "1: " + qData['OP1'] + '\n' + "2: " + qData['OP2'] + '\n' + "3: " + qData['OP3'] + '\n')
 	    	qid +=  1
 	    	try:
