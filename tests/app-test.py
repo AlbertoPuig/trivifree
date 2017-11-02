@@ -19,8 +19,6 @@ def load_data4tests(api_version):
             data = json.load(f)
             try:
                 data4tests = data['requests'][api_version -1]['data']
-                #print data4tests
-                #print "______________"  
                 return data4tests  
             except Exception as ex:
                 print str(ex)
@@ -29,9 +27,8 @@ def load_data4tests(api_version):
 
 
 
-data_respon = {u'OP2': u'Dublin', u'QT': u'The capital of Bulgaria is?', u'OP1': u'Sofia', u'CRT': u'op1', u'OP3': u'Kiev'}
+#data_respon = {u'OP2': u'Dublin', u'QT': u'The capital of Bulgaria is?', u'OP1': u'Sofia', u'CRT': u'op1', u'OP3': u'Kiev'}
 url = load_properties('local','url')
-load_data4tests(2)
 
 class TestStringMethods(unittest.TestCase):
     def test_url(self):
