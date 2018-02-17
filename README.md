@@ -1,7 +1,9 @@
 # Trivifree
 ## Trivial Quizzes
 - Python Flask Application
-#Tech
+
+### Tech
+
 - FlasK
 - API REST
 - TDD
