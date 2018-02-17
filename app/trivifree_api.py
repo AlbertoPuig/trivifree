@@ -48,4 +48,4 @@ api.add_resource(Quest, '/trivifree/api/v1/quest/<question_id>') # Route_1
 
 
 if __name__ == '__main__':
-       app.run(host='127.0.0.1', port=8080)
+       app.run(port="5000")
